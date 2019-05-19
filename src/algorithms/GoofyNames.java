@@ -25,21 +25,25 @@ int usernamelength = username.length();
 username.substring(0, usernamelength);
 			// 5. Use MODULO to set this variable to upper case for EVEN characters
 			//    and lower case for ODD characters.
-if(usernamelength%2 == 1) {
-System.out.println(username.toLowerCase());
+for(int i = 0; i<usernamelength; i++) {
+if(i%2 == 0) {
+System.out.println(username.substring(i, i+1).toUpperCase());
+String n = username.substring(i, i+1).toUpperCase();
+goofyName = goofyName + n;
 }
 else {
-System.out.println(username.toUpperCase());
+System.out.println(username.substring(i, i+1).toLowerCase());
+String n = username.substring(i, i+1).toLowerCase();
+goofyName = goofyName + n;
 }
-JOptionPane.showMessageDialog(null, username + " is your goofy name!");
 }
 			
 			// 6. ADD this String  (containing 1 char) to the goofyName String
 
-		
 		// 7. Use pop-up to show user their goofy name
-	
+	JOptionPane.showMessageDialog(null, goofyName + " is your goofy name!");
 	}
+}
 
 
 
