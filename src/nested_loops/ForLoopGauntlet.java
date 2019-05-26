@@ -32,7 +32,14 @@ public static void main(String[] args) {
 		for(int u=0; u<3; u++) {
 			System.out.println(a + " " + u);
 		}
-		
 		}
-	}
-	}
+	for(int q=1; q<8; q+=3) {
+		for(int w=2; w<9; w+=3) {
+			for(int e=3; e<10; e+=3) {
+			System.out.println(q + " " + w + " " + e);
+			}
+			
+		}
+		}
+		}
+		}
