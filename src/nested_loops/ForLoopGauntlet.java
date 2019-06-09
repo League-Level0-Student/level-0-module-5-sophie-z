@@ -33,13 +33,21 @@ public static void main(String[] args) {
 			System.out.println(a + " " + u);
 		}
 		}
-	for(int q=1; q<8; q+=3) {
-		for(int w=2; w<9; w+=3) {
-			for(int e=3; e<10; e+=3) {
-			System.out.println(q + " " + w + " " + e);
+	for(int w=0; w<=6; w+=3) {
+		for(int e=1; e<4; e++) {
+			System.out.print(e + w);
 			}
-			
-		}
-		}
-		}
-		}
+		System.out.println();
+	}
+	for(int p=0; p<41; p+=10) {
+	for(int k=-1; k<31; k+=10) {
+	for(int h=0; h<21; h+=10) {
+	for(int g=1; g<11; g++) {
+		System.out.print(g + h + k + p);
+	}
+	System.out.println();
+	}
+	}
+	}
+}
+}
